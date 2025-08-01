@@ -1,21 +1,19 @@
-
+import user from '../../assets/images/user.png'
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="hero pt-12 ">
+      <div className="hero-content flex-col justify-between lg:flex-row-reverse pb-0">
         <img
-          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-          className="max-w-sm rounded-lg shadow-2xl"
+          src={user}
+          className="w-1/2"
         />
-        <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
+        <div className='h-1/2'>
+          <h1 className="text-7xl font-bold leading-[80px]">One Step <br /> Closer To Your <br /> <span className="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">Dream Job</span></h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+           Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it. Manage all <br /> your job application from start to finish.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white">Get Started</button>
         </div>
       </div>
     </div>
