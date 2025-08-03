@@ -6,6 +6,7 @@ import {
   AiTwotoneContainer,
 } from "react-icons/ai";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import bg1 from '../../assets/images/bg1.png'
 
 const JobDeatils = () => {
   const { jobId } = useParams();
@@ -30,8 +31,10 @@ const JobDeatils = () => {
   const { phone, email, address } = contact_information;
   return (
     <div>
-      <h2 className="text-xl text-center font-bold my-20">Job Details</h2>
-      <div className="my-20 flex gap-8">
+      <div className="bg-auto bg-no-repeat bg-left-bottom py-30" style={{ backgroundImage: `url(${bg1})` }}>
+        <h2 className="text-xl text-center font-bold">Job Details</h2>
+      </div>
+      <div className="my-10 flex gap-8 w-4/5 mx-auto">
         <div className="w-2/3">
           <p className="text-gray-500">
             <span className="font-bold">Job Description:</span>
@@ -57,8 +60,11 @@ const JobDeatils = () => {
               </p>
             </div>
             <div className="flex items-center gap-1">
-                <AiTwotoneContainer></AiTwotoneContainer>
-                <p><span className="font-bold">Job Title: </span>{job_title}</p>
+              <AiTwotoneContainer></AiTwotoneContainer>
+              <p>
+                <span className="font-bold">Job Title: </span>
+                {job_title}
+              </p>
             </div>
             <p className="font-bold mt-4 -mb-4">Contct Information</p>
             <div className="divider"></div>
@@ -84,7 +90,12 @@ const JobDeatils = () => {
               </p>
             </div>
           </div>
-          <Link className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white mt-4" to={'/'}>Apply Now</Link>
+          <Link
+            className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white mt-4"
+            to={"/"}
+          >
+            Apply Now
+          </Link>
         </div>
       </div>
     </div>
