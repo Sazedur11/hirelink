@@ -1,7 +1,7 @@
 
 
 const JobCategory = ({job}) => {
-    console.log(job);
+    
     const {logo, category_name, availability} = job;
     return (
         <div className="bg-base-200 p-6 rounded-md">

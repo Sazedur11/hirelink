@@ -1,8 +1,10 @@
 import user from '../../assets/images/user.png'
+import cover from '../../assets/images/bg1.png'
+
 
 const Banner = () => {
   return (
-    <div className="hero pt-12 ">
+    <div className="hero pt-12 bg-auto bg-no-repeat bg-left-bottom" style={{ backgroundImage: `url(${cover})` }}>
       <div className="hero-content flex-col justify-between lg:flex-row-reverse pb-0">
         <img
           src={user}

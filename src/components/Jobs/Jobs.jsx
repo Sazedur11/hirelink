@@ -15,6 +15,7 @@ const Jobs = () => {
     setVisibleCount((prevCount) => prevCount + 2);
   };
 
+
   return (
     <div className="my-8">
       <h2 className="text-4xl font-bold text-center mb-4">Featured Jobs</h2>
@@ -29,11 +30,12 @@ const Jobs = () => {
         {visibleCount < jobs.length && (
           <button
             onClick={handleLoadMore}
-             className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-30 mx-auto my-4"
+             className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-40 mx-auto my-4"
           >
             See All Jobs
           </button>
         )}
+        
       </div>
     </div>
   );
