@@ -47,7 +47,7 @@ const JobDeatils = () => {
           <p className="text-gray-500">{experiences}</p>
         </div>
         <div className="h-1/3 text-gray-500">
-          <div className="bg-gray-200 p-4 rounded-sm">
+          <div className="bg-base-300 p-4 rounded-sm">
             <h3 className="text-xl font-bold -mb-4">Job details</h3>
             <div className="divider"></div>
             <div className="flex items-center gap-1">
