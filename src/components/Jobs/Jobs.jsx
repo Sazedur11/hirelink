@@ -30,7 +30,7 @@ const Jobs = () => {
         {visibleCount < jobs.length && (
           <button
             onClick={handleLoadMore}
-             className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-40 mx-auto my-4"
+             className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-40 my-4"
           >
             See All Jobs
           </button>

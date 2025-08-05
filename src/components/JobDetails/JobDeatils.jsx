@@ -7,17 +7,18 @@ import {
 } from "react-icons/ai";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import bg1 from '../../assets/images/bg1.png'
+import { addToStoredJobList } from "../../utility/addToDB";
 
 const JobDeatils = () => {
   const { jobId } = useParams();
   const data = useLoaderData();
 
   const id = parseInt(jobId);
-  console.log("Parsed ID:", id);
+  
 
   // Find the job in the array
   const job = data.find((job) => job.id === id);
-  console.log(job);
+  
   const {
     job_description,
     job_responsibility,
@@ -29,6 +30,12 @@ const JobDeatils = () => {
   } = job;
 
   const { phone, email, address } = contact_information;
+
+  const handleAppliedJobs = () =>{
+    console.log('clicked applied jobs', id)
+    addToStoredJobList(id)
+  }
+
   return (
     <div>
       <div className="bg-auto bg-no-repeat bg-left-bottom py-30" style={{ backgroundImage: `url(${bg1})` }}>
@@ -91,8 +98,9 @@ const JobDeatils = () => {
             </div>
           </div>
           <Link
-            className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white mt-4"
-            to={"/"}
+          onClick={() => handleAppliedJobs(id)}
+            className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white mt-4 w-full py-6"
+            to={"/appliedJobs"}
           >
             Apply Now
           </Link>

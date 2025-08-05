@@ -12,14 +12,22 @@ const Navbar = () => {
         >
             Home
         </NavLink>
-        <NavLink 
+        {/* <NavLink 
         to={'/jobDetails'}
         className={
             ({isActive}) =>
         isActive ? "font-bold bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent" : "font-normal"
         }
         >
-            Job Details</NavLink>
+            Job Details</NavLink> */}
+        <NavLink 
+        to={'/appliedJobs'}
+        className={
+            ({isActive}) =>
+        isActive ? "font-bold bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent" : "font-normal"
+        }
+        >
+            Applied Jobs</NavLink>
     </>
 
   return (
