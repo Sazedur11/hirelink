@@ -13,7 +13,7 @@ const AppliedJob = ({ job }) => {
     id
   } = job;
   return (
-    <div className="md:flex justify-between items-center w-3/4 mx-auto border-1 border-base-300 rounded-xl p-4">
+    <div className="md:flex justify-between items-center lg:w-3/4 mx-auto border-1 border-base-300 rounded-xl p-4">
       <div className="md:flex items-center  gap-4">
         <div className="md:bg-base-300 py-8 px-4 rounded-sm">
             <img className="w-30 h-10" src={logo} alt={job_title} />

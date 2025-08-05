@@ -23,20 +23,20 @@ const Jobs = () => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className="mt-8 grid md:grid-cols-2 gap-8">
+      <div className="mt-8 md:ml-50 grid md:grid-cols-2  gap-8 ">
         {jobs.slice(0, visibleCount).map((job) => (
           <Job key={job.id} job={job}></Job>
         ))}
+        
+      </div>
         {visibleCount < jobs.length && (
           <button
             onClick={handleLoadMore}
-             className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-40 my-4"
+             className="btn bg-gradient-to-r from-pink-500 to-yellow-500 text-white w-40 block mx-auto my-4"
           >
             See All Jobs
           </button>
         )}
-        
-      </div>
     </div>
   );
 };

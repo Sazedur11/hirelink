@@ -41,8 +41,8 @@ const JobDeatils = () => {
       <div className="bg-auto bg-no-repeat bg-left-bottom py-30" style={{ backgroundImage: `url(${bg1})` }}>
         <h2 className="text-xl text-center font-bold">Job Details</h2>
       </div>
-      <div className="my-10 flex gap-8 w-4/5 mx-auto">
-        <div className="w-2/3">
+      <div className="my-10 md:flex gap-8 w-4/5 mx-auto">
+        <div className="w-2/3 mb-8 md:mb-0">
           <p className="text-gray-500">
             <span className="font-bold">Job Description:</span>
             {job_description}
