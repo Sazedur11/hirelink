@@ -31,9 +31,13 @@ Netlify – Deployed and hosted live
 This project was created as part of a React learning journey to explore:
 
 Data fetching using loaders
+
 LocalStorage usage for tracking applied jobs
+
 Reusable components
+
 Route-based data loading
 
 🧑‍💻 Author
+
 Sazedur Rahman
