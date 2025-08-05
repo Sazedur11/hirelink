@@ -1,12 +1,39 @@
-# React + Vite
+🚀 HireLink – Job Finder Web App
+Live Website 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HireLink is a responsive and dynamic job listing web application designed to help users explore job opportunities, view job details, and apply with ease. Built using modern frontend technologies, the project focuses on clean UI, efficient routing, and component-based architecture.
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+React.js – Functional components and hooks for dynamic UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Router DOM – Client-side routing
 
-## Expanding the ESLint configuration
+Tailwind CSS – Utility-first CSS for styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+DaisyUI – Prebuilt UI components
+
+Netlify – Deployed and hosted live
+
+📁 Features
+🏠 Home Page: Brief intro with job categories
+
+📋 Job Listings: List of jobs loaded from JSON
+
+🔍 Job Details Page: View detailed info by route /jobDetails/:id
+
+✅ Apply Now: Track applied jobs
+
+📂 Filter Feature: See jobs by Remote / Onsite / Full-time / Part-time
+
+📱 Responsive Design: Works well on all devices
+
+🧠 Learning Purpose
+This project was created as part of a React learning journey to explore:
+
+Data fetching using loaders
+LocalStorage usage for tracking applied jobs
+Reusable components
+Route-based data loading
+
+🧑‍💻 Author
+Sazedur Rahman
